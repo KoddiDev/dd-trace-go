@@ -1,4 +1,4 @@
-module github.com/KoddiDev/sketches-go
+module github.com/KoddiDev/dd-trace-go
 
 go 1.12
 
