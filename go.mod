@@ -1,4 +1,4 @@
-module gopkg.in/DataDog/dd-trace-go.v1
+module gopkg.in/KoddiDev/dd-trace-go.v1
 
 go 1.12
 
