@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"testing"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/internal"
+	"github.com/KoddiDev/dd-trace-go/ddtrace/ext"
+	"github.com/KoddiDev/dd-trace-go/ddtrace/internal"
 
 	"github.com/stretchr/testify/assert"
 )

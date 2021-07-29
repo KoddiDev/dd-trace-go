@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/KoddiDev/dd-trace-go/internal/log"
 )
 
 type traceWriter interface {

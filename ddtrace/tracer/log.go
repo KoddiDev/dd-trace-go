@@ -14,9 +14,9 @@ import (
 	"runtime"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/version"
+	"github.com/KoddiDev/dd-trace-go/internal/globalconfig"
+	"github.com/KoddiDev/dd-trace-go/internal/log"
+	"github.com/KoddiDev/dd-trace-go/internal/version"
 )
 
 const (
