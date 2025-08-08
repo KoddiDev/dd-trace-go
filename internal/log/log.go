@@ -9,6 +9,7 @@ package log
 import (
 	"fmt"
 	"log"
+	"math"
 	"os"
 	"strconv"
 	"sync"
@@ -88,6 +89,8 @@ func init() {
 	if v := os.Getenv("DD_LOGGING_RATE"); v != "" {
 		if sec, err := strconv.ParseUint(v, 10, 64); err != nil {
 			Warn("Invalid value for DD_LOGGING_RATE: %v", err)
+		} else if sec > uint64(math.MaxInt64) {
+			Warn("Value for DD_LOGGING_RATE too large: %v (max: %v)", sec, math.MaxInt64)
 		} else {
 			errrate = time.Duration(sec) * time.Second
 		}
